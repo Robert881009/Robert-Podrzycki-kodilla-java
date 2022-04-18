@@ -24,7 +24,7 @@ public class CollectionTestSuite {
         System.out.println("Test Suite: end");
     }
 
-    @DisplayName("checks list is empty")
+    @DisplayName("Checks list when is empty")
 
     @Test
     void testOddNumbersExterminatorEmptyList(){
