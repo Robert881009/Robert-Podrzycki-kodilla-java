@@ -57,19 +57,16 @@ public class ShapeCollectorTestSuite {
         Assertions.assertEquals(result,triangle);
     }
     @Test
-        void testShowFigures(){
-        //Given
+    void testShowFigures(){
+    //Given
         ShapeCollector figure = new ShapeCollector();
         figure.addFigure(new Triangle("Triangle",10.3,5.2));
         figure.addFigure(new Circle("Circle",5.0));
         figure.addFigure(new Square("Square",20.0));
-        //When
-        List result = figure.showFigures();
-        List<String> expectResult = new ArrayList<>();
-        expectResult.add("Triangle");
-        expectResult.add("Circle");
-        expectResult.add("Square");
-        //Then
-        Assertions.assertEquals(expectResult,result);
-        }
+    //When
+        String result = figure.showFigures();
+        String expectedResult = "Triangle Circle Square ";
+    //Then
+        Assertions.assertEquals(expectedResult,result);
+    }
 }

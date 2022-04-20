@@ -8,8 +8,11 @@ public class ShapeCollector {
 
 
     public void addFigure(Shape shape){
+
         shapeList.add(shape);
     }
+
+
     public boolean removeFigure(Shape shape){
         boolean result = false;
         if(shapeList.contains(shape)){
@@ -22,13 +25,13 @@ public class ShapeCollector {
         Shape result =  shapeList.get(n);
         return result;
     }
-    public List<String> showFigures(){
-        List<String> list = new ArrayList<>();
+    public String showFigures(){
+        String figures = "";
         for (Shape shape: shapeList) {
             String result = shape.getShapeName();
-            list.add(result);
+            figures += result + " ";
         }
-        return list;
+        return figures;
     }
 }
 
