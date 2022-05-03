@@ -8,8 +8,11 @@ public final class World {
 
     public void addContinent(Continent continent){
         continentList.add(continent);
-
     }
+    public List<Continent> getContinentList(){
+        return new ArrayList<>(continentList);
+    }
+
     public BigDecimal getPeopleQuantity(){
            BigDecimal allPeople = continentList.stream()
                     .map(Continent::getCountryList)
