@@ -13,10 +13,9 @@ public class ArrayOperationsTestSuite {
         //Given
         int[] number = {22,45,31,56,56,73,42,34,56,72,13,42,27,64,84,34,56,75,12,16};
         //When
-        ArrayOperations.getAverage(number);
-
+        double average = ArrayOperations.getAverage(number);
         //Then
-        Assertions.assertEquals(45.5,ArrayOperations.getAverage(number));
+        Assertions.assertEquals(45.5,average);
     }
 
 
